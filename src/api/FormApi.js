@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { urldev } from '../constants/urls/apiUrls';
+import { urldev, urlprod } from '../constants/urls/apiUrls';
 
 export const SubmitForm = async (formData) => {
   const { firstName, Lastname, email, phone, message } = formData;
@@ -16,7 +16,7 @@ export const SubmitForm = async (formData) => {
       requestBody.phone = phone;
     }
 
-    const response = await axios.post(urldev, requestBody);
+    const response = await axios.post(urlprod, requestBody);
 
     return response.data;
   } catch (error) {

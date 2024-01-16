@@ -38,7 +38,7 @@ const ProjectCardContainer = styled.div`
 
   @media only screen and (max-width: 415px) {
     width: 15rem;
-    height: 70rem;
+    height: 50rem;
   }
 `;
 
@@ -54,12 +54,21 @@ const Title = styled.h1`
   overflow-wrap: break-word;
   width: 100%;
   font-size: 1.5rem;
+
+  @media only screen and (max-width: 415px) {
+    font-size: 1.2rem;
+  }
 `;
 
 const ProjectImage = styled.img`
   width: 100%;
   height: 70%;
   object-fit: cover;
+
+  @media only screen and (max-width: 415px) {
+    object-fit: none;
+    height: 20rem;
+  }
 `;
 
 const ProjDetails = styled.p`

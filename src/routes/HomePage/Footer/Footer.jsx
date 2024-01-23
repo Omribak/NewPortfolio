@@ -7,9 +7,10 @@ export const FooterContainer = styled.div`
 
 const CopyRight = styled.p``;
 function Footer() {
+  const currentYear = new Date().getFullYear();
   return (
     <FooterContainer>
-      <CopyRight>&copy; Omri Bakal 2024.</CopyRight>
+      <CopyRight>&copy; Omri Bakal {currentYear}.</CopyRight>
     </FooterContainer>
   );
 }

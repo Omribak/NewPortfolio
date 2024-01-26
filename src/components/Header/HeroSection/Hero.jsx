@@ -82,7 +82,7 @@ const AstroLottieDiv = styled.div`
     padding: 0;
   }
 
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 699px) {
     display: none;
   }
 `;
